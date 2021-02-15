@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+.wrapper{
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.detectBtn{
+    width: 120px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    background: #736CED;
+    color: #fff;
+    margin: 25px 0;
+    font-family: 'Bebas Neue', cursive;
+    box-shadow: 0px 1px 10px 0px #a2a2a2
+}
+
+.instruction{
+    margin: 25px 0;
+    font-size: 25px;
+    font-family: 'Roboto';
+}
+
+#uploadedImage{
+    width: 320px;
+    height: 320px;
+    border: none;
+    border-radius: 15px;
+    margin: 25px 0;
+    object-fit: contain;
+}
+
+#uploadImage{
+    width: 100%;
+    height: 35px;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    width: 100px;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    background: #736CED;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+}
+
+input[type=file]::file-selector-button {
+ width: 100px;
+ height: 100%;
+ border: none;
+ border-radius: 15px;
+ background: #736CED;
+ color: #fff;
+ font-family: 'Bebas Neue', cursive;
+
+}
+
+input[type=file]::-webkit-file-upload-button {
+    cursor: pointer;
+ }
+
+input[type=file]::file-selector-button:hover {
+   cursor: pointer;
+}
+
+.header{
+    width: 100%;
+    background: #736CED;
+    color: #fff;
+    box-shadow: 0px 1px 10px 0px #a2a2a2
+}
+
+
+.heading{
+    font-size: 30px;
+    padding: 15px 10px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.result-label{
+    font-weight: bolder;
+    color: #736CED;
+}
+.btn{
+    margin: 25px auto;
+}
+
+.canvas{
+    margin: 10px auto;
+}
+
+.instruction{
+    color: #736CED;
+}

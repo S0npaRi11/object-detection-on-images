@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom css rules -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title> Object detection (Images) </title>
+</head>
+<body>
+    <nav class="header">
+        <p class="heading"> Object detection on image </p>
+     </nav>
+    <div class="container">
+        <div class="text-center">
+            <div class="wrapper">
+                <h3 class="instruction" id="instruction"> Model is loading. Please wait. </h3>
+                <!-- Uplooad image -->
+                <input type="file" name="uploadImage" id="uploadImage" style="display: none;">
+
+                <!-- Uploaded Image will be here (will be hidder) -->
+                <img src="" alt="" id="uploadedImage" height="200" width="200" style="display: none;">
+
+                <!-- Display image within canvas(because we have to draw on top of it) -->
+                <canvas class="canvas" id="canvas" width="300" height="300" style="display: none;"></canvas>
+    
+                <!-- Detect button -->
+                <button class="btn detectBtn" id="detectBtn" style="display: none;"> Detect </button>
+
+                <!-- Try again button -->
+                <button class="btn detectBtn" id="tryAgain" style="display: none;"> Try again </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
