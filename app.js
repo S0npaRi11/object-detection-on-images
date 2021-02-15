@@ -49,7 +49,7 @@ const getDetection = () => {
                 context.fillStyle = '#db92ff73'
                 context.fillRect(result[i].x,result[i].y,result[i].height * 1.5,result[i].width * 1.5);
                 context.fillStyle = '#000';
-                context.font = "12px Courier";
+                context.font = "15px Courier";
                 context.fillText(`${result[i].label} - conf: ${Math.floor(result[i].confidence * 100)}%`, result[i].x + 10, result[0].y + 25); 
             }
 
