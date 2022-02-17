@@ -64,6 +64,7 @@ const getDetection = () => {
 }
 
 const detectAgain = () => {
+    context.clearRect(0,0,300,300);
 
     // hide tryAgain button and canvas
     tryAgain.style.display = 'none'
